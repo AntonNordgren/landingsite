@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Octopus AB</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                outline: none;
+            }
+            
+            body{
+                background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-522579.png") no-repeat center center fixed;
+                background-size: cover;
+            }
+            
+            header {
+                position: relative;
+                width: 100%;
+                height: 100px;;
+                background-color: rgba(0,0,0, .6);
+                color: rgba(255,255,255, 1);
+                text-align: center;
+                font-family: 'Fascinate';
+            }
+            
+            #logotype {
+                position: relative;
+                font-size: 3em;
+                top: 15%;
+                right: 37%;
+            }
+            
+            #content{
+                position: relative;
+                display: flex;
+            }
+            
+            #background {
+                position: fixed;
+                width: 1920px;
+                height: 1080px;
+            }
+            
+            #text {
+                position: relative;
+                height: 80vh;
+                width: 50%;
+                text-align: center;
+            }
+            
+            #text-content {
+                position: relative;
+                width: 90%;
+                height: 90%;
+                left: 5%;
+                right: 5%;
+                top: 5%;
+                background-color: rgba(0,0,0, 0);
+                color: rgba(255,255,255, 1);
+                border-radius: 5px;
+            }
+            
+            #rubrik {
+                position: relative;
+                font-family: 'Bree Serif', serif;
+                font-size: 3em;
+                top: 5%;
+            }
+            
+            #theText {
+                position: relative;
+                font-family: 'Bree Serif', serif;
+                top: 10%;
+                width: 90%;
+                left: 5%;
+                right: 5%;
+                font-size: 1.3em;
+                text-align: left;
+            }
+            
+            #theText p {
+                padding: 3%;
+            }
+            
+            #userInput {
+                position: relative;
+                height: 80vh;
+                width: 50%;
+            }
+            
+            #userInput-content {
+                position: relative;
+                width: 70%;
+                height: 600px;
+                left: 15%;
+                right: 15%;
+                top: 10%;
+                background-color: rgba(0,0,0, .6);
+                color: rgba(255,255,255, 1);
+                border-radius: 5px;
+            }
+            
+            #inputText {
+                position: relative;
+                font-family: 'Bree Serif', serif;
+                bottom: 10%;
+                top: 15%;
+                font-size: 1.3em;
+                text-align: left;
+            }
+            
+            #user-input input {
+                position: relative;
+                width: 50%;
+                left: 25%;
+                right: 25%;
+            }
+            
+            #theForm {
+                position: relative;
+                width: 90%;
+                left: 5%;
+                right: 5%;
+                bottom: 30px;
+                height: 90%;
+            }
+            
+            #theForm input {
+                position: relative;
+                left: 15%;
+                right: 15%;
+                width: 70%;
+                height: 3em;
+                margin-bottom: 5%;
+                font-size: 1em;
+            }
+            
+            #theForm p {
+                position: relative;
+                text-align: center;
+                margin-bottom: 3%;
+                font-size: 2em;
+            }
+            
+            #theForm #tryButton {
+                position: relative;
+                font-family: 'Bree Serif', serif;
+                width: 50%;
+                left: 25%;
+                right: 25%;
+                font-size: 1em;
+                border-radius: 10px;
+                background-color: orange;
+                color: white;
+            }
+            
+            footer {
+                position: relative;
+                background-color: rgba(0,0,0, .6);
+                color: rgba(255,255,255, 1);
+                width: 100%;
+                height: 100px;
+                font-family: 'Fascinate';
+            }
+            
+            @media (max-width: 950px) {
+                
+                #logotype {
+                    position: absolute;
+                    text-align: center;
+                }
+                
+                #content {
+                    width: 100%;
+                    margin-bottom: 100px;
+                    display: block;
+                }
+                
+                #text {
+                    position: relative;
+                    width: 100%;
+                    text-align: center;
+                    margin: 0;
+                }
+                
+                #userInput {
+                    position: relative;
+                    width: 100%;
+                    left: 0;
+                }
+                
+                #theForm {
+                    position: relative;
+                    width: 80%;
+                    left: 10%;
+                    right: 10%;
+                    top: 0;
+                }
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header><span id = "logotype">Octopus</span></header>
+        <div id = "content">
+            <div id = "text">
+                <div id = "text-content">
+                    <div id = "rubrik">Octopus CloudFamily</div>
+                    <div id = "theText">
+                        <p>* Cloud Family är din enkla väg till att hålla koll på släktingar.</p>
+                        <p>* Cloud Family ger dig möjlighet att skapa ditt eget släktträd.</p>
+                        <p>* 256-bitars kryptering gör att dina släktingar är säkra hos Cloud Family.</p>
+                        <p>* Håll reda på födelsedagarna med Cloud Family.</p>
+                        <p>* Din familjs hemligheter är säkra i vårt moln.</p>
+                        <p>* Cloud Family binder samman din släkt såväl i molnet som på jorden.</p>
+                    </div>
+                </div>
+            </div>
+            <div id = "userInput">
+                <div id = "userInput-content">
+                    <div id = "inputText">
+                        <form id = "theForm">
+                            <p>Prova Octopus Standard gratis!</p>
+                            <input type = "text" placeholder="Förnamn">
+                            <input type = "text" placeholder="Efternamn">
+                            <input type = "text" placeholder="Email">
+                            <input id = "tryButton" type = "button" value = "Prova Gratis!">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </body>
+</html>
