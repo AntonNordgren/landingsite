@@ -30,7 +30,7 @@
             
             #logotype {
                 position: relative;
-                font-size: 3em;
+                font-size: 300%;
                 top: 15%;
                 right: 37%;
             }
@@ -38,7 +38,7 @@
             #content{
                 position: relative;
                 display: flex;
-                min-height: 80vh;
+                height: 80vh;
             }
             
             #background {
@@ -62,7 +62,6 @@
                 top: 5%;
                 background-color: rgba(0,0,0, 0);
                 color: rgba(255,255,255, 1);
-                border-radius: 5px;
             }
             
             #rubrik {
@@ -89,7 +88,6 @@
             
             #userInput {
                 position: relative;
-                height: 80vh;
                 width: 50%;
             }
             
@@ -99,17 +97,17 @@
                 height: 600px;
                 left: 15%;
                 right: 15%;
-                top: 10%;
                 background-color: rgba(0,0,0, .6);
                 color: rgba(255,255,255, 1);
-                border-radius: 5px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
             }
             
             #inputText {
                 position: relative;
                 font-family: 'Bree Serif', serif;
                 bottom: 10%;
-                top: 15%;
+                top: 20%;
                 font-size: 1.3em;
                 text-align: left;
             }
@@ -164,8 +162,16 @@
                 background-color: rgba(0,0,0, .6);
                 color: rgba(255,255,255, 1);
                 width: 100%;
-                height: 10vh;
+                height: 100px;
                 font-family: 'Fascinate';
+            }
+            
+            #first {
+                display: block;
+            }
+            
+            #second {
+                display: none;
             }
             
             @media (max-width: 900px) {
@@ -177,25 +183,26 @@
                 
                 #content {
                     width: 100%;
-                    margin-bottom: 100px;
                     display: block;
                 }
                 
                 #text {
                     position: relative;
-                    height: 50%;
                     width: 100%;
                     text-align: center;
-                    margin: 0;
+                    margin-top: 20px;
                 }
                 
                 #userInput {
                     position: relative;
                     width: 100%;
-                    height: 50%;
                     left: 0;
-                    top: 50px;
-                    bottom: 50px;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
+                
+                #userInput-content {
+                    border-radius: 10px;
                 }
                 
                 #theForm {
@@ -203,6 +210,20 @@
                     width: 80%;
                     left: 10%;
                     right: 10%;
+                }
+                
+                footer {
+                    position: relative;
+                    height: 100px;
+                    bottom: 0;
+                }
+                
+                #first {
+                    display: none;
+                }
+                
+                #second {
+                    display: block;
                 }
             }
             
@@ -237,7 +258,8 @@
                     </div>
                 </div>
             </div>
+            <footer id = "second"></footer>
         </div>
-        <footer></footer>
+        <footer id = "first"></footer>
     </body>
 </html>
